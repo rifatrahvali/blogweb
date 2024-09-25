@@ -8,10 +8,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link {{ Route::is('home')?" active":"" }}" href="{{ route('home') }}">Home</a>
+                    <a class="nav-link {{ Route::is('home')?" active":"" }}" href="{{ route('home') }}">Anasayfa</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ Route::is('about')?" active":"" }}" href="{{ route('about') }}">About</a>
+                    <a class="nav-link {{ Route::is('about')?" active":"" }}" href="{{ route('about') }}">Hakkımda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ Route::is('contact')?" active":"" }}" href="{{ route('contact') }}">İletişim</a>
                 </li>
 
             </ul>
