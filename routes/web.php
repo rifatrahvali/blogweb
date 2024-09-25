@@ -15,4 +15,5 @@ Route::post('/contact/{id}/{name?}', 'ContactController@user')
     ->name("user")
     //->where("id", "[0-9]+")
     ->where(["id"=>"[0-9]+","name"=>"[a-z]+"]);
-
+// hem post hem get
+// Route::match(['get','post'],'/support-form','SupportFormController@support')->name('support-form.support');
