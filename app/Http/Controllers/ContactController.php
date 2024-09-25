@@ -6,11 +6,20 @@ use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
-    public function showForm() {
+    public function showForm()
+    {
         return view("front.contact");
     }
-    public function contact(Request $request) {
-        
+    public function contact(Request $request)
+    {
+
+
+        return view("front.contact");
+    }
+    public function user(Request $request, int $id, string $name = null)
+    {
+
+
         dd($request->all());
     }
 }
