@@ -33,7 +33,7 @@
 
     front - destek 3 blade php
     <hr>
-    <form action="{{ route('support-form.support') }}">
+    <form action="">
         @csrf
         {{-- <input type="hidden" name="_token" value="{{ csrf_token() }}"> --}}
         {{-- csrf - formdan gelen istek bizim sitemizden mi geliyor --}}

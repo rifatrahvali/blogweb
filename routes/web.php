@@ -1,7 +1,8 @@
 <?php
-
 use App\Http\Controllers\HomeController;
+
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ActicleController;
 
 // v3 Service Provider ile değiştirdik
 // Route::get('/anasayfa','HomeController@index');
@@ -17,3 +18,6 @@ Route::post('/contact/{id}/{name?}', 'ContactController@user')
     ->where(["id"=>"[0-9]+","name"=>"[a-z]+"]);
 // hem post hem get
 // Route::match(['get','post'],'/support-form','SupportFormController@support')->name('support-form.support');
+
+// tümfonksiyonları getirecek --resource
+//Route::resource('article','ArticleController');
