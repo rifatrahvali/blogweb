@@ -38,6 +38,8 @@ class User extends Authenticatable
      *
      * @var array<string, string>
      */
+
+     // çevirme işlemleri - örnek parolayı texten hash'le
     protected $casts = [
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
